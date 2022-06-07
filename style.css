@@ -1,0 +1,42 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 0.5fr 0.5fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-areas: 
+       "nav main main main main css"
+       "boy poli tech loc opi spo"
+       "boy poli tech loc opi spo"
+    ;
+}
+nav{
+    grid-area: nav;
+}
+main{
+   grid-area: main;
+}
+#css{
+    grid-area: css;
+}
+#boy{
+    grid-area: boy;
+}
+#poli{
+    background-color: #dddf6f;
+    grid-area: poli;
+}
+#tech{
+    background-color: #75a9ec;
+    grid-area: tech;
+}
+#loc{
+    background-color: #236ccc;
+}
+#opi{
+    background-color: #1fbda8;
+    grid-area: opi;
+}
+#spo{
+    background-color: #8b0985;
+    grid-area: spo;
+}
